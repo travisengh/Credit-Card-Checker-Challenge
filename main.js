@@ -60,7 +60,7 @@ const validateCred = (array) => {
     return 'Valid Credit Card';
   }
   else {
-    return 'Invalid Credit Card';
+    return ('Invalid Credit Card');
   }
 };
 
@@ -101,16 +101,9 @@ const idInvalidCardCompanies = (cardNumArr) => {
       return invalidCardCompanies.indexOf(x) === index;
     })
 
-  return uniqueInvalidCards.sort();
+  return console.log(uniqueInvalidCards.sort());
 }
 
 validateCred(batch);
 findInvalidCards(batch);
 idInvalidCardCompanies(batch);
-
-
-
-
-
-
-
